@@ -144,13 +144,11 @@ export function injectPositive(values: number[]): number[] {
         return [...values, adds];
     } else {
         const start = values.slice(0, negativeIndex);
-        console.log("start: " + start);
         const adds = start.reduce(
             (currentTotal: number, num: number) => currentTotal + num,
             0
         );
         const end = values.slice(negativeIndex + 1, values.length);
-        console.log("end: " + end);
         return [...start, values[negativeIndex], adds, ...end];
     }
 }
