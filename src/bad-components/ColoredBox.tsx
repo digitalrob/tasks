@@ -17,7 +17,7 @@ function ChangeColor({ setColorIndex, colorIndex }: colorProps): JSX.Element {
     );
 }
 
-function ColorPreview({ setColorIndex, colorIndex }: colorProps): JSX.Element {
+function ColorPreview({ colorIndex }: colorProps): JSX.Element {
     return (
         <div
             data-testid="colored-box"
